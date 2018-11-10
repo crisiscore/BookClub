@@ -36,14 +36,26 @@ class ViewController: UIViewController {
 extension ViewController : UICollectionViewDelegate {
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let navigationController = self.storyboard?.instantiateViewController(withIdentifier: "BannerViewController") as! UINavigationController
         
-        _ = navigationController.viewControllers[0] as! BannerViewController
+        if indexPath.section == 0 {
+            let navigationController = self.storyboard?.instantiateViewController(withIdentifier: "BannerViewController") as! UINavigationController
         
-//        vc.newsTitle = news[indexPath.row]
-//        vc.mNews = News()
+            _ = navigationController.viewControllers[0] as! BannerViewController
+            
+            //        vc.newsTitle = news[indexPath.row]
+            //        vc.mNews = News()
+            
+            self.present(navigationController , animated: true , completion: nil)
+            
+        }else if indexPath.section != 1{
+            let navigationController = self.storyboard?.instantiateViewController(withIdentifier: "NewsDetailsViewController") as! UINavigationController
+            
+            _ = navigationController.viewControllers[0] as! NewsDetailsViewController
+            
+            self.present(navigationController , animated: true , completion: nil)
+        }
         
-        self.present(navigationController , animated: true , completion: nil)
+       
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

@@ -31,6 +31,8 @@ class LatestBooksCollectionViewCell: UICollectionViewCell {
 //        //        vc.mNews = News()
 //
 //        self.present(navigationController , animated: true , completion: nil)
+        
+        
     }
     
 }
@@ -47,13 +49,17 @@ extension LatestBooksCollectionViewCell : UICollectionViewDelegateFlowLayout , U
         
     }
     
-    
 }
 
 extension LatestBooksCollectionViewCell : UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 120 , height: 180)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        
     }
     
 }
