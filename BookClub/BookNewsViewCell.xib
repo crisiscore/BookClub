@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BookNewsViewCell" customModule="BookClub" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="441" height="281"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="441" height="281"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oy3-0C-AmU">
+                        <rect key="frame" x="0.0" y="0.0" width="441" height="281"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="book_news" translatesAutoresizingMaskIntoConstraints="NO" id="1v7-8w-Edm">
+                                <rect key="frame" x="16" y="16" width="409" height="192"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The 40 best books to read before you die, from Anna Karenina to Wolf Hall" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CeU-pl-Kkf">
+                                <rect key="frame" x="16" y="224" width="409" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1v7-8w-Edm" firstAttribute="leading" secondItem="oy3-0C-AmU" secondAttribute="leading" constant="16" id="4JJ-5q-Dmw"/>
+                            <constraint firstAttribute="trailing" secondItem="CeU-pl-Kkf" secondAttribute="trailing" constant="16" id="6AT-E4-23a"/>
+                            <constraint firstAttribute="bottom" secondItem="CeU-pl-Kkf" secondAttribute="bottom" constant="16" id="Lso-kx-WsY"/>
+                            <constraint firstAttribute="trailing" secondItem="1v7-8w-Edm" secondAttribute="trailing" constant="16" id="Rga-Tb-wV7"/>
+                            <constraint firstItem="1v7-8w-Edm" firstAttribute="top" secondItem="oy3-0C-AmU" secondAttribute="top" constant="16" id="l6Q-PH-LGw"/>
+                            <constraint firstItem="CeU-pl-Kkf" firstAttribute="top" secondItem="1v7-8w-Edm" secondAttribute="bottom" constant="16" id="qpZ-9i-Xvx"/>
+                            <constraint firstItem="CeU-pl-Kkf" firstAttribute="leading" secondItem="oy3-0C-AmU" secondAttribute="leading" constant="16" id="xgL-hL-gMQ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="oy3-0C-AmU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="KEH-v7-344"/>
+                <constraint firstItem="oy3-0C-AmU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="PnK-yo-3PC"/>
+                <constraint firstAttribute="trailing" secondItem="oy3-0C-AmU" secondAttribute="trailing" id="hrM-jW-7RR"/>
+                <constraint firstAttribute="bottom" secondItem="oy3-0C-AmU" secondAttribute="bottom" id="kI8-2V-g4x"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="441" height="281"/>
+            <point key="canvasLocation" x="386.39999999999998" y="210.04497751124438"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="book_news" width="860" height="460"/>
+    </resources>
+</document>

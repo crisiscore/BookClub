@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,203 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BookClub" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="u6G-ic-1g9">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tPG-dd-LFg">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u6G-ic-1g9" secondAttribute="trailing" id="03k-cc-4Qx"/>
+                            <constraint firstItem="u6G-ic-1g9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Qec-T5-trU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="u6G-ic-1g9" secondAttribute="bottom" id="RV5-se-sik"/>
+                            <constraint firstItem="u6G-ic-1g9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bz7-Ql-jAM"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="mainCollectionView" destination="u6G-ic-1g9" id="N5u-LX-0ow"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--A Family On The Moon-->
+        <scene sceneID="NB7-KM-C6T">
+            <objects>
+                <viewController id="W0R-jK-xBX" customClass="BannerViewController" customModule="BookClub" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fkU-Wk-2tL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QMu-Ep-Ayp">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="news_book" translatesAutoresizingMaskIntoConstraints="NO" id="7iQ-k9-SPP">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="3FS-fQ-FRM"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Family Business On The Moon" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYk-Pi-4yD">
+                                        <rect key="frame" x="16" y="196" width="343" height="66"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Izn-SB-1x2">
+                                        <rect key="frame" x="16" y="278" width="343" height="1075.5"/>
+                                        <string key="text">This activity-based fieldbook is designed as a rigorous planning tool based on more than 25 years of teaching and advising business families around the world. It teaches the professional planning skills required for any business family to become a multi-generational team driven by planning, passion and, purpose.  
+
+We call it a fieldbook because it creates real-world family learning experiences with activities to explore family and business planning. 
+
+After over 25 years of teaching family businesses around the world, we have seen some outstanding business families who understand and use professional planning tools to help their families and businesses perform better.
+
+But we have also observed, and research shows, that most business families do not have plans for succession and few have a clear family strategy. 
+
+The need for business planning is demonstrated and accepted but many families still neglect addressing their family plans because they know the issues are emotional and they do not want to risk potentially explosive conversations.
+
+It is understandable that planning for both family harmony and business sustainability is a daunting task, and therefore often ignored or avoided. 
+
+It is also clear that the family’s significant role demands the family’s capable and active participation so there needs to be a new approach to helping business families learn to work together more effectively. 
+
+This fieldbook is also a rigorous planning tool, teaching the professional planning skills for a business family to move from the founder or owner-manager stages (G1,G2), based on power, personality and politics, to a multi-generational family-team model (G3 and beyond), driven by planning, passion and purpose. 
+</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Izn-SB-1x2" firstAttribute="leading" secondItem="QMu-Ep-Ayp" secondAttribute="leading" constant="16" id="BdL-Yz-iDa"/>
+                                    <constraint firstItem="7iQ-k9-SPP" firstAttribute="top" secondItem="QMu-Ep-Ayp" secondAttribute="top" id="EXB-CX-Gqh"/>
+                                    <constraint firstItem="7iQ-k9-SPP" firstAttribute="centerX" secondItem="QMu-Ep-Ayp" secondAttribute="centerX" id="LKu-mW-R83"/>
+                                    <constraint firstAttribute="trailing" secondItem="7iQ-k9-SPP" secondAttribute="trailing" id="UuU-N5-Xgp"/>
+                                    <constraint firstItem="dYk-Pi-4yD" firstAttribute="top" secondItem="7iQ-k9-SPP" secondAttribute="bottom" constant="16" id="Xu9-n6-qcg"/>
+                                    <constraint firstAttribute="bottom" secondItem="Izn-SB-1x2" secondAttribute="bottom" constant="16" id="beF-Cd-jza"/>
+                                    <constraint firstItem="7iQ-k9-SPP" firstAttribute="leading" secondItem="QMu-Ep-Ayp" secondAttribute="leading" id="bqo-ru-8gj"/>
+                                    <constraint firstItem="Izn-SB-1x2" firstAttribute="top" secondItem="dYk-Pi-4yD" secondAttribute="bottom" constant="16" id="eUN-NH-2Eh"/>
+                                    <constraint firstAttribute="trailing" secondItem="dYk-Pi-4yD" secondAttribute="trailing" constant="16" id="jZx-Me-Mi6"/>
+                                    <constraint firstItem="dYk-Pi-4yD" firstAttribute="leading" secondItem="QMu-Ep-Ayp" secondAttribute="leading" constant="16" id="o5L-vb-qB2"/>
+                                    <constraint firstAttribute="trailing" secondItem="Izn-SB-1x2" secondAttribute="trailing" constant="16" id="ytw-0A-hzL"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qR6-0Q-2yQ" firstAttribute="trailing" secondItem="QMu-Ep-Ayp" secondAttribute="trailing" id="8N3-fB-jJ0"/>
+                            <constraint firstItem="qR6-0Q-2yQ" firstAttribute="bottom" secondItem="QMu-Ep-Ayp" secondAttribute="bottom" id="e8C-nH-XpW"/>
+                            <constraint firstItem="QMu-Ep-Ayp" firstAttribute="leading" secondItem="qR6-0Q-2yQ" secondAttribute="leading" id="kLZ-O9-N0d"/>
+                            <constraint firstItem="QMu-Ep-Ayp" firstAttribute="top" secondItem="qR6-0Q-2yQ" secondAttribute="top" id="ujH-7E-NXU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qR6-0Q-2yQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="A Family On The Moon" id="fdv-Ql-6kO">
+                        <barButtonItem key="leftBarButtonItem" image="back" id="R36-YJ-CTP">
+                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <connections>
+                                <action selector="back:" destination="W0R-jK-xBX" id="Dre-bi-gax"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iC3-Fr-PKj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2102" y="118"/>
+        </scene>
+        <!--Latest Books-->
+        <scene sceneID="J0W-hW-dac">
+            <objects>
+                <viewController id="Pb2-Y2-dOz" customClass="LatestBookViewController" customModule="BookClub" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I3R-DE-His">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gp1-xt-1r6">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ur1-im-EIo">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gp1-xt-1r6" firstAttribute="top" secondItem="o18-5j-IIH" secondAttribute="top" id="Mai-ig-Jds"/>
+                            <constraint firstItem="o18-5j-IIH" firstAttribute="trailing" secondItem="gp1-xt-1r6" secondAttribute="trailing" id="TJf-hG-InE"/>
+                            <constraint firstItem="o18-5j-IIH" firstAttribute="bottom" secondItem="gp1-xt-1r6" secondAttribute="bottom" id="f7e-JP-zLi"/>
+                            <constraint firstItem="gp1-xt-1r6" firstAttribute="leading" secondItem="o18-5j-IIH" secondAttribute="leading" id="n0m-8k-1yk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="o18-5j-IIH"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Latest Books" id="Hjm-bZ-9xq">
+                        <barButtonItem key="leftBarButtonItem" image="back" id="4sq-tg-223">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NFT-fY-iQe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3882" y="118"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="huk-jK-A6W">
+            <objects>
+                <navigationController storyboardIdentifier="BannerViewController" automaticallyAdjustsScrollViewInsets="NO" id="bbR-AZ-MSV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5kG-GJ-4GL">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="W0R-jK-xBX" kind="relationship" relationship="rootViewController" id="5nj-rv-oeH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jku-3E-vRL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1377" y="119"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Dae-7f-dDU">
+            <objects>
+                <navigationController storyboardIdentifier="LatestBookViewController" automaticallyAdjustsScrollViewInsets="NO" id="On4-oe-yxF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="l1t-ag-Itx">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Pb2-Y2-dOz" kind="relationship" relationship="rootViewController" id="N7N-NJ-yhM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kZo-gr-Vto" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3057" y="118"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="back" width="25" height="25"/>
+        <image name="news_book" width="600" height="300"/>
+    </resources>
 </document>

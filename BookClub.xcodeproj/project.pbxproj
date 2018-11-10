@@ -7,14 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CCFA5EA521967AF400426D27 /* LatestBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFA5EA421967AF400426D27 /* LatestBookViewController.swift */; };
 		CCFD5D5E2194FCDC00DAC53E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFD5D5D2194FCDC00DAC53E /* AppDelegate.swift */; };
 		CCFD5D602194FCDC00DAC53E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFD5D5F2194FCDC00DAC53E /* ViewController.swift */; };
 		CCFD5D632194FCDC00DAC53E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCFD5D612194FCDC00DAC53E /* Main.storyboard */; };
 		CCFD5D652194FCDE00DAC53E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCFD5D642194FCDE00DAC53E /* Assets.xcassets */; };
 		CCFD5D682194FCDE00DAC53E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCFD5D662194FCDE00DAC53E /* LaunchScreen.storyboard */; };
+		CCFD5D712194FD5700DAC53E /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFD5D6F2194FD5700DAC53E /* BannerCollectionViewCell.swift */; };
+		CCFD5D722194FD5700DAC53E /* BannerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCFD5D702194FD5700DAC53E /* BannerCollectionViewCell.xib */; };
+		CCFD5D742194FDE300DAC53E /* CellRegisterUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFD5D732194FDE300DAC53E /* CellRegisterUtil.swift */; };
+		CCFD5D772195012800DAC53E /* LatestBooksCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFD5D752195012800DAC53E /* LatestBooksCollectionViewCell.swift */; };
+		CCFD5D782195012800DAC53E /* LatestBooksCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCFD5D762195012800DAC53E /* LatestBooksCollectionViewCell.xib */; };
+		CCFD5D7B2195028500DAC53E /* LatestBookViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFD5D792195028500DAC53E /* LatestBookViewCell.swift */; };
+		CCFD5D7C2195028500DAC53E /* LatestBookViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCFD5D7A2195028500DAC53E /* LatestBookViewCell.xib */; };
+		CCFD5D7F219504EA00DAC53E /* BookNewsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFD5D7D219504EA00DAC53E /* BookNewsViewCell.swift */; };
+		CCFD5D80219504EA00DAC53E /* BookNewsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCFD5D7E219504EA00DAC53E /* BookNewsViewCell.xib */; };
+		CCFD5D8221950AC900DAC53E /* BannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFD5D8121950AC900DAC53E /* BannerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CCFA5EA421967AF400426D27 /* LatestBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestBookViewController.swift; sourceTree = "<group>"; };
 		CCFD5D5A2194FCDC00DAC53E /* BookClub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookClub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCFD5D5D2194FCDC00DAC53E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCFD5D5F2194FCDC00DAC53E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +34,16 @@
 		CCFD5D642194FCDE00DAC53E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCFD5D672194FCDE00DAC53E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCFD5D692194FCDE00DAC53E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCFD5D6F2194FD5700DAC53E /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
+		CCFD5D702194FD5700DAC53E /* BannerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerCollectionViewCell.xib; sourceTree = "<group>"; };
+		CCFD5D732194FDE300DAC53E /* CellRegisterUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellRegisterUtil.swift; sourceTree = "<group>"; };
+		CCFD5D752195012800DAC53E /* LatestBooksCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestBooksCollectionViewCell.swift; sourceTree = "<group>"; };
+		CCFD5D762195012800DAC53E /* LatestBooksCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LatestBooksCollectionViewCell.xib; sourceTree = "<group>"; };
+		CCFD5D792195028500DAC53E /* LatestBookViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestBookViewCell.swift; sourceTree = "<group>"; };
+		CCFD5D7A2195028500DAC53E /* LatestBookViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LatestBookViewCell.xib; sourceTree = "<group>"; };
+		CCFD5D7D219504EA00DAC53E /* BookNewsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookNewsViewCell.swift; sourceTree = "<group>"; };
+		CCFD5D7E219504EA00DAC53E /* BookNewsViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookNewsViewCell.xib; sourceTree = "<group>"; };
+		CCFD5D8121950AC900DAC53E /* BannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +82,17 @@
 				CCFD5D642194FCDE00DAC53E /* Assets.xcassets */,
 				CCFD5D662194FCDE00DAC53E /* LaunchScreen.storyboard */,
 				CCFD5D692194FCDE00DAC53E /* Info.plist */,
+				CCFD5D6F2194FD5700DAC53E /* BannerCollectionViewCell.swift */,
+				CCFD5D702194FD5700DAC53E /* BannerCollectionViewCell.xib */,
+				CCFD5D732194FDE300DAC53E /* CellRegisterUtil.swift */,
+				CCFD5D752195012800DAC53E /* LatestBooksCollectionViewCell.swift */,
+				CCFD5D762195012800DAC53E /* LatestBooksCollectionViewCell.xib */,
+				CCFD5D792195028500DAC53E /* LatestBookViewCell.swift */,
+				CCFD5D7A2195028500DAC53E /* LatestBookViewCell.xib */,
+				CCFD5D7D219504EA00DAC53E /* BookNewsViewCell.swift */,
+				CCFD5D7E219504EA00DAC53E /* BookNewsViewCell.xib */,
+				CCFD5D8121950AC900DAC53E /* BannerViewController.swift */,
+				CCFA5EA421967AF400426D27 /* LatestBookViewController.swift */,
 			);
 			path = BookClub;
 			sourceTree = "<group>";
@@ -122,8 +155,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCFD5D80219504EA00DAC53E /* BookNewsViewCell.xib in Resources */,
+				CCFD5D7C2195028500DAC53E /* LatestBookViewCell.xib in Resources */,
 				CCFD5D682194FCDE00DAC53E /* LaunchScreen.storyboard in Resources */,
 				CCFD5D652194FCDE00DAC53E /* Assets.xcassets in Resources */,
+				CCFD5D782195012800DAC53E /* LatestBooksCollectionViewCell.xib in Resources */,
+				CCFD5D722194FD5700DAC53E /* BannerCollectionViewCell.xib in Resources */,
 				CCFD5D632194FCDC00DAC53E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +172,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCFA5EA521967AF400426D27 /* LatestBookViewController.swift in Sources */,
+				CCFD5D742194FDE300DAC53E /* CellRegisterUtil.swift in Sources */,
+				CCFD5D712194FD5700DAC53E /* BannerCollectionViewCell.swift in Sources */,
+				CCFD5D8221950AC900DAC53E /* BannerViewController.swift in Sources */,
 				CCFD5D602194FCDC00DAC53E /* ViewController.swift in Sources */,
 				CCFD5D5E2194FCDC00DAC53E /* AppDelegate.swift in Sources */,
+				CCFD5D7F219504EA00DAC53E /* BookNewsViewCell.swift in Sources */,
+				CCFD5D7B2195028500DAC53E /* LatestBookViewCell.swift in Sources */,
+				CCFD5D772195012800DAC53E /* LatestBooksCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
